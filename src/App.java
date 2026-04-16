@@ -6,12 +6,28 @@ public class App {
 
         Pedido p1 = new Pedido("Kevin Chicaiza",
                 "Mentas",
-                50,
+                150,
+                "kevinCh@gmail.com",
+                "0999999999");
+
+        Pedido p2 = new Pedido("Kevin Chicaiza",
+                "Mentas",
+                70,
+                "kevinCh@gmail.com",
+                "0999999999");
+
+        Pedido p3 = new Pedido("Kevin Chicaiza",
+                "Mentas",
+                20,
                 "kevinCh@gmail.com",
                 "0999999999");
 
         PedidoService service = new PedidoService();
+        System.out.println("====================");
         service.registrar(p1);
-
+        System.out.println("====================");
+        service.registrar(p2);
+        System.out.println("====================");
+        service.registrar(p3);
     }
 }
